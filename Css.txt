@@ -1,0 +1,97 @@
+
+
+/*
+{
+font-family: 'Merriweather', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Slab', serif;
+color:#123;
+}*/
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://www.prodapt.com/wp-content/uploads/2-2.jpg') no-repeat center/cover;
+
+}
+.main{
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 10px 10px 100px #123,-10px -10px 100px #123;
+    background: url('https://www.prodapt.com/wp-content/uploads/2-2.jpg') no-repeat center/cover;
+}
+
+#chk{
+    display:none;
+}
+.signup{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+label{
+    color:#f81707;
+    font-size: 1.2em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+input{
+    width: 60%;
+    height: 20px;
+    background-color: rgb(221,221,221);
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: groove 0.5px rgb(203,220,236);
+    outline:none;
+    border-radius: 10px;
+
+}
+button{
+    width: 60%;
+    height: 40px;
+    margin: 20px auto;
+    display: block;
+    justify-content: center;
+    background-color: #02182e;
+    color:#fff;
+    margin-top: 20px;
+    border: none;
+    outline:none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: .2s ease-in;
+    cursor:pointer;
+}
+.login{
+    height: 460px;
+    background: rgb(218,216,216);
+    border-radius:20px;
+    transform: translateY(-170px);
+    transition: 1.8s ease-in-out;
+}
+.login label{
+    color: #123;
+    transform: scaleX(.6);
+}
+#chk:checked ~ .login
+{
+    transform: translateY(-500px);
+}
+#chk:checked ~.login label
+{
+    transform: scale(1);
+}
+#chk:checked ~.signup label{
+    transform: scale(.6);
+}
